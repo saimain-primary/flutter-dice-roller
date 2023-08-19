@@ -16,7 +16,9 @@ class _DiceRollerState extends State<DiceRoller> {
   var currentDiceRoll = 2;
   void rollDice() {
     setState(() {
+      print('Rolling the dice...');
       currentDiceRoll = randomizer.nextInt(6) + 1;
+      print('Result is $currentDiceRoll');
     });
   }
 
